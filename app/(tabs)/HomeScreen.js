@@ -17,7 +17,11 @@
 //}
 
 import React, { useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button,} from 'react-native';
+import * as Font from 'expo-font'
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator(Stack);
 
 export default function HomeScreen({ navigation }) {
   const [contador, setContador] = useState(0);

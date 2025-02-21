@@ -4,6 +4,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import DetailsScreen from './DetailsScreen';
 
+import * as Font from 'expo-font'
+import { useFonts } from 'expo-font';
+
+export default function App() {
+  let [forntsLoaded] = useFonts({ 'Alice-400': require('@expo-google-fonts/alice'),
+  'Alice-400': require('@expo-google-fonts/alice')
+})
+
 const Stack = createStackNavigator();
 
 export default function App() {
